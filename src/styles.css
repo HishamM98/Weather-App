@@ -1,1 +1,139 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(88, 15, 147);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+}
+.search-bar{
+  color: black;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: plum;
+  box-shadow: 2px 3px 12px 0px black;
+  margin: 30px 0px 10px ;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 400px;
+  background-color: blueviolet;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.148);
+}
+
+.upper-container{
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+  width: 100%;
+  background-color: rgb(65, 20, 108);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.upper-container img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-data{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(119, 0, 255, 0.216);
+}
+
+.location{
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temperature{
+  color: aliceblue;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 900;
+
+}
+
+.lower-container{
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-info-label{
+  color: white;
+}
+
+.more-info-container{
+  flex: 1;
+  background-color: rgb(157, 88, 222);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-block{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block-label{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block-label span{
+  color: aliceblue;
+  font-size: 0.8em;
+}
+
+.info-block-value{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: aliceblue;
+}
